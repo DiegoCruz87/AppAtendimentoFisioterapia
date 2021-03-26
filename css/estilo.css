@@ -1,0 +1,35 @@
+
+/*Barra de navegação --------------------------
+*/
+header{
+    background: cornflowerblue;
+    padding: 15px 0;
+    height: 55px;
+}
+
+nav ul li{
+    list-style: none;
+    float: right;
+    margin: 10px;
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+    display: block;
+}
+/*tabela de registro de atendimento --------------------------
+*/
+
+.lin{
+    border-top: 1px solid #dee2e6;
+}
+
+.col{
+    border-top: 1px solid #dee2e6;
+}
+.tab{
+    border-top: 1px solid #dee2e6;
+    margin-top: 10%;
+
+}
