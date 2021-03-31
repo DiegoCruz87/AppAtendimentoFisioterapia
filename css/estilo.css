@@ -1,4 +1,8 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
 
+
+
+/*-----------------------------------------------*/
 /*Barra de navegação --------------------------
 */
 header{
@@ -10,26 +14,56 @@ header{
 nav ul li{
     list-style: none;
     float: right;
-    margin: 10px;
+    margin: 5px 15px;
     color: white;
+}
+
+a{
+    color: honeydew;
+    font-weight: bold;
 }
 
 a:link{
     text-decoration: none;
     display: block;
 }
+
+
+.imgTop{
+    height: 15px;
+    width: 10px;
+}
+
+
+
 /*tabela de registro de atendimento --------------------------
 */
-
-.lin{
-    border-top: 1px solid #dee2e6;
+caption{
+    margin: 3%;
 }
 
-.col{
-    border-top: 1px solid #dee2e6;
+table{
+    margin-top: 5%; 
+}
+.tabConteudo{
+    display: flex;
+    margin: auto;
 }
 .tab{
-    border-top: 1px solid #dee2e6;
-    margin-top: 10%;
-
+    width: 95%;
+    text-align: center;
 }
+    .tab thead{
+        background: cornflowerblue;
+        color: white;
+        font-weight: bold;
+    }
+    .tab tbody{
+        background: rgb(226, 225, 225);
+    }
+
+    .tab th, .tab td{
+        padding: 7px 0;
+    }
+
+
