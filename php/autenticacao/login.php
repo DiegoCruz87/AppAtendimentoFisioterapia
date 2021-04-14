@@ -1,15 +1,12 @@
 <!--
-REGRAS DE LOGIN E LOGAUT
+REGRAS DE LOGIN E LOGOUT
 TELA DE LOGIN
 
 
 ---------------------------------------->
-<?
-//cÓDIGO PHP
-
-
+<?php
+session_start();
 ?>
-<!-------------------------------------------->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,20 +14,35 @@ TELA DE LOGIN
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppAtendimentoFisioterapiat</title>
+    <title>Login</title>
 </head>
 <body>
-     <header>
-        <nav>
+    <H3>ÁREA RESTRITA</H3>
+    <?php
+        if (isset($_SESSION ['msg'])) {
+            echo $_SESSION ['msg'];
+            unset($_SESSION ['msg']);
+        }
 
-        </nav>
-     </header>
-     <div>
-        <section>
-            Seja be vindo!
-        </section>
-     </div>
+        if (isset($_SESSION ['msgcad'])) {
+            echo $_SESSION ['msgcad'];
+            unset($_SESSION ['msgcad']);
+        }
 
+    ?>
+    <form method="POST" action="valida.php" 
+        <label>Usuário</label>
+        <input type="text" name="usuario" placeholder="Digite o seu usuario"><br><br>    
 
-</body>
+        <label>Senha</label>
+        <input type="password" name="senha" placeholder="Digite a sua senha"><br><br>
+
+        <input type="submit" name="btnLogin" value="Acessar">
+
+        <h4>AINDA NÃO TEM ACESSO?</h4>
+        <a href="cadastro.php">CADASTRE-SE</a>
+
+    </form>
+
+</body> 
 </html>
