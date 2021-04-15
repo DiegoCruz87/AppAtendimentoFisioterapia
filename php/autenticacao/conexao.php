@@ -6,3 +6,5 @@ $dbname = "projeto_aplicacao_web";
 
 //Criar a conexao
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+
+?>

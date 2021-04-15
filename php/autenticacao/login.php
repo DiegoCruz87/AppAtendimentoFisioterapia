@@ -30,7 +30,7 @@ session_start();
         }
 
     ?>
-    <form method="POST" action="valida.php" 
+    <form method="POST" action="valida.php"> 
         <label>Usuário</label>
         <input type="text" name="usuario" placeholder="Digite o seu usuario"><br><br>    
 
